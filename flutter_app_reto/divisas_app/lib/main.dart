@@ -214,7 +214,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             textDestino.text =
                                 conversionMoneda(org, des, textOrigen.text);
                           } else {
-                            //ejecución
+                            //ejecución de lectura de origen y conversión en automatico
                             textOrigen.text =
                                 textOrigen.text + ent[index].titulo;
 
