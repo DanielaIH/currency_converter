@@ -93,7 +93,7 @@ List<entorno> ent = <entorno>[
   entorno("9", Color.fromARGB(255, 234, 161, 14), Icon(Icons.abc)),
   entorno("0", Color.fromARGB(255, 234, 161, 14), Icon(Icons.abc)),
   entorno(".", Color.fromARGB(255, 234, 161, 14), Icon(Icons.abc)),
-  entorno("", Color.fromARGB(255, 197, 18, 18),
+  entorno("", Color.fromARGB(255, 133, 29, 29),
       Icon(Icons.cleaning_services_rounded)),
   entorno("", Colors.grey, Icon(Icons.arrow_back)),
   entorno("Cambiar", Colors.blueAccent, Icon(Icons.import_export_outlined))
@@ -152,14 +152,19 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             TextField(
               controller: textOrigen,
-              decoration:
-                  InputDecoration(labelText: "Moneda de origen", hintText: "0"),
+              enabled: false,
+              decoration: InputDecoration(
+                  labelText: "Moneda de origen",
+                  hintText: "0",
+                  prefixIcon: Icon(Icons.money)),
             ),
             TextField(
               controller: textDestino,
               enabled: false,
               decoration: InputDecoration(
-                  labelText: "Moneda de destino", hintText: "0"),
+                  labelText: "Moneda de destino",
+                  hintText: "0",
+                  prefixIcon: Icon(Icons.money)),
             ),
             Expanded(
               child: Padding(
